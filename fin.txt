@@ -1,0 +1,33 @@
+import React from "react";
+import "../styles/Header.css";
+
+
+const Header = () => {
+    return (
+        // Replaced Tailwind classes with the .header class from your CSS
+        <header className="header">
+            {/* Replaced Tailwind classes with the .container class */}
+            <div className="container">
+                {/* Replaced Tailwind classes with the .logo class */}
+                <div className="logo">
+                    {/* The CSS already targets the <i> tag, so no class name is needed here. */}
+                    <i className="fas fa-chart-line"></i>
+                    <h1>FinTrack</h1>
+                </div>
+                {/* Replaced Tailwind classes with the .auth-buttons class */}
+                <div className="auth-buttons">
+                    {/* Replaced Tailwind classes with the .btn-outline class */}
+                    <button className="btn-outline">
+                        Sign In
+                    </button>
+                    {/* Replaced Tailwind classes with the .btn-primary class */}
+                    <button className="btn-primary">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </header>
+    );
+};
+
+export default Header;
